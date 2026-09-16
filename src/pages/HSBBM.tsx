@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 export default function HSBBM() {
   const [fullName, setFullName] = useState<string>("");
@@ -20,6 +20,7 @@ export default function HSBBM() {
   const expirationDate = getExpirationDate();
 
   const emailDraft: string = `Hello ${fullName || "[Name]"},  
+
 I was forwarded a request from our system regarding digital access to the Habits of a Successful Beginner Band Musician conductor's book via code.  
   
 A few years back we switched our policy from offering the digital edition of the book free with code access to offering it for sale either physically or digitally. The free code inclusion took place during the early days of the COVID lockdowns, and thus, we provided the digital solution for free.  
@@ -30,9 +31,8 @@ If you visit our store product page (https://giamusic.com/resource/habits-of-a-s
  
 Please feel free to reach out and let me know if you have any further questions,
 
-Jin Lee
-GIA Publications
-Technical Assistant`;
+Jin 
+`;
 
   const handleCopy = async () => {
     try {
